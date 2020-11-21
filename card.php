@@ -1,47 +1,47 @@
-<!doctype html>
+<?php
+/*
+ * Подключаем  базу данных (PhpMyAdmin, MySQL)
+ */
+require_once 'config/connect.php';
+?>
+<!--верстка старая хеаддер+меню--> 
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<head>
+	<meta charset="UTF-8">
+	<title>adrees_book</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS + main -->
-    <link rel="stylesheet" href="css\bootstrap.css">
-    <link rel="stylesheet" href="css\main.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-  <header class="headder">
-		<div class="hrback"> 
-	<div class="container"> 
-	</div>
-<div class="container">
-<div class="zag"><a href="index.php"><p>www</p></a></div>
-<nav class="top-menu">
-	<ul>
-		<li>
-			<a href="index.php">main vid</a>
-		</li>
-		<li>
-			<a href="add_new.php">add new</a>
-				</li>
-		<li>
-			<a href="sear.php">search</a>
-		<ul>
-			<li><a href="#">mail</a></li>
-			
-		</ul>
-		</li>
-		<li>
-			<a href="card.php">any card</a>
-		</li>
-		</ul>
-</nav>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Arial:300" rel="stylesheet">
+</head>
+	<body> 
+<header>
+		<div class="container"> 
+	<ul class="nav nav-pills nav-fill">
+  <li class="top-menu">
+    <a class="nav-link active" href="index.php">Главная</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="add_new.php">Добавить новый</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sear.php">Поиск</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="card.php">Карточка контакта</a>
+  </li>
+  <li class="nav-item">
+    <!-- Search form -->
+<div class="md-form mt-0">
+  <input class="form-control" type="text" placeholder="Введите текст" aria-label="Search">
+</div>
+  </li>
+</ul>
+</div>
 </header>
-    <h1>Hello, world!</h1>
-    <!--end header-->
-
- 
+    
     <div class="container">
  
     <div class="card" style="width: 18rem;">
@@ -53,15 +53,12 @@
   </div>
  
   </div>
+  </div>
    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="js\jquery-3.5.1.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
     <!-- FOOTER
     -->
-    <footer> 
-	<div class="container">
-</div>
-	<div class="black"></div>
-    </footer>
+
   </body>
 </html>
